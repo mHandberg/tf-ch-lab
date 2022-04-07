@@ -9,3 +9,7 @@ variable "region" {
 variable "zone" {
   default = "us-central1-a"
 }
+
+variable "bucketname" {
+  default = "bucket091934jlkasd"
+}

@@ -16,7 +16,22 @@ module "instances" {
     
 }
 
+/* Dette er til Task 3 i challengen.
+
 
 module "storage" {
     source = "./modules/storage"
+    bucketname = var.bucketname
+    zone = var.zone
 }
+
+#Backend config, altså hvor tfstate filene blir lagret.
+#Hvis dette ikke er inkludert så er standard i root.
+terraform {
+  backend "gcs" {
+    bucket  = "" #Denne kan ikke være variabel.
+    prefix  = "terraform/state"
+  }
+}
+
+*/
